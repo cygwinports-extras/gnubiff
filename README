@@ -1,0 +1,116 @@
+gnubiff
+------------------------------------------
+gnubiff is a mail notification program for GNOME that checks for mail
+and displays headers when new mail has arrived.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  gamin-0.1.7-1
+  gnome-panel-2.14.1-1
+  gtk2-x11-2.8.17-1
+  libX11_6-1.0.0-2
+  libglade2-2.5.1-1
+  libgnome2-2.14.1-1
+  libgnomeui2-2.14.1-1
+  openssl-0.9.8a-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.93-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gcc-g++-3.4.4-1
+  intltool-0.35.0-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://gnubiff.sourceforge.net/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/gnubiff/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gnubiff-2.2.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gnubiff-2.2.1-X.cygport all
+
+This will create:
+  /usr/src/gnubiff-2.2.1-X-src.tar.bz2
+  /usr/src/gnubiff-2.2.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/gnubiff.sh
+  /usr/bin/gnubiff.exe
+  /usr/lib/bonobo/servers/GNOME_gnubiffApplet.server
+  /usr/share/doc/Cygwin/gnubiff-2.2.1.README
+  /usr/share/doc/gnubiff-2.2.1/ABOUT-NLS
+  /usr/share/doc/gnubiff-2.2.1/AUTHORS
+  /usr/share/doc/gnubiff-2.2.1/COPYING
+  /usr/share/doc/gnubiff-2.2.1/ChangeLog
+  /usr/share/doc/gnubiff-2.2.1/INSTALL
+  /usr/share/doc/gnubiff-2.2.1/NEWS
+  /usr/share/doc/gnubiff-2.2.1/README
+  /usr/share/doc/gnubiff-2.2.1/THANKS
+  /usr/share/doc/gnubiff-2.2.1/TODO
+  /usr/share/gnome-2.0/ui/GNOME_gnubiffApplet.xml
+  /usr/share/gnubiff/applet-gtk.glade
+  /usr/share/gnubiff/authentication.glade
+  /usr/share/gnubiff/certificate.glade
+  /usr/share/gnubiff/coin.wav
+  /usr/share/gnubiff/envelopes.png
+  /usr/share/gnubiff/gnubiff.png
+  /usr/share/gnubiff/mail.wav
+  /usr/share/gnubiff/popup.glade
+  /usr/share/gnubiff/preferences.glade
+  /usr/share/gnubiff/properties.glade
+  /usr/share/gnubiff/tux-awake.png
+  /usr/share/gnubiff/tux-big.png
+  /usr/share/gnubiff/tux-jump(64x64).png
+  /usr/share/gnubiff/tux-sleep(64x64).png
+  /usr/share/gnubiff/tux-sleep.png
+  /usr/share/info/gnubiff.info.gz
+  /usr/share/locale/cs/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/de/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/es/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/fr/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/fr_CA/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/fr_FR/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/hu/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/it/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/nl/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/ro/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/rw/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/sv/LC_MESSAGES/gnubiff.mo
+  /usr/share/locale/vi/LC_MESSAGES/gnubiff.mo
+  /usr/share/man/man1/gnubiff.1.gz
+  /usr/share/pixmaps/gnubiff.png
+
+------------------
+
+Port Notes:
+
+----- version 2.2.1-1 -----
+Version bump.
+
+----- version 2.2.0-1 -----
+Version bump.
+
+----- version 2.1.9-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
