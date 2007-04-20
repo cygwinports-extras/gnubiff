@@ -4,10 +4,10 @@ gnubiff is a mail notification program for GNOME that checks for mail
 and displays headers when new mail has arrived.
 
 Runtime requirements:
-  cygwin-1.5.23-2
+  cygwin-1.5.24-2
   gamin-0.1.7-1
   gnome-panel-2.16.2-1
-  gtk2-x11-2.10.7-1
+  gtk2-x11-2.10.9-1
   libX11_6-1.1.1-1
   libglade2-2.6.0-1
   libgnome2-2.16.0-1
@@ -16,11 +16,11 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.23-2
+  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.9-1
+  cygport-0.2.11-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
@@ -33,20 +33,20 @@ Canonical website:
   http://gnubiff.sourceforge.net/
 
 Canonical download:
-  ftp://ftp.gnome.org/pub/gnome/sources/gnubiff/
+  http://downloads.sourceforge.net/gnubiff/
 
 -------------------------------------------
 
 Build instructions:
-  unpack gnubiff-2.2.5-X-src.tar.bz2
+  unpack gnubiff-2.2.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnubiff-2.2.5-X.cygport all
+  cygport ./gnubiff-2.2.6-X.cygport all
 
 This will create:
-  /usr/src/gnubiff-2.2.5-X-src.tar.bz2
-  /usr/src/gnubiff-2.2.5-X.tar.bz2
+  /usr/src/gnubiff-2.2.6-X-src.tar.bz2
+  /usr/src/gnubiff-2.2.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -55,16 +55,16 @@ Files included in the binary package:
   /etc/postinstall/gnubiff.sh
   /usr/bin/gnubiff.exe
   /usr/lib/bonobo/servers/GNOME_gnubiffApplet.server
-  /usr/share/doc/Cygwin/gnubiff-2.2.5.README
-  /usr/share/doc/gnubiff-2.2.5/ABOUT-NLS
-  /usr/share/doc/gnubiff-2.2.5/AUTHORS
-  /usr/share/doc/gnubiff-2.2.5/COPYING
-  /usr/share/doc/gnubiff-2.2.5/ChangeLog
-  /usr/share/doc/gnubiff-2.2.5/INSTALL
-  /usr/share/doc/gnubiff-2.2.5/NEWS
-  /usr/share/doc/gnubiff-2.2.5/README
-  /usr/share/doc/gnubiff-2.2.5/THANKS
-  /usr/share/doc/gnubiff-2.2.5/TODO
+  /usr/share/doc/Cygwin/gnubiff-2.2.6.README
+  /usr/share/doc/gnubiff-2.2.6/ABOUT-NLS
+  /usr/share/doc/gnubiff-2.2.6/AUTHORS
+  /usr/share/doc/gnubiff-2.2.6/COPYING
+  /usr/share/doc/gnubiff-2.2.6/ChangeLog
+  /usr/share/doc/gnubiff-2.2.6/INSTALL
+  /usr/share/doc/gnubiff-2.2.6/NEWS
+  /usr/share/doc/gnubiff-2.2.6/README
+  /usr/share/doc/gnubiff-2.2.6/THANKS
+  /usr/share/doc/gnubiff-2.2.6/TODO
   /usr/share/gnome-2.0/ui/GNOME_gnubiffApplet.xml
   /usr/share/gnubiff/applet-gtk.glade
   /usr/share/gnubiff/authentication.glade
@@ -101,6 +101,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.2.6-1 -----
+Version bump.
 
 ----- version 2.2.5-1 -----
 Version bump.
