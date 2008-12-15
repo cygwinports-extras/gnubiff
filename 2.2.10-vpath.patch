@@ -1,0 +1,21 @@
+--- origsrc/gnubiff-2.2.10/ui/Makefile.am	2005-04-02 02:51:59.000000000 -0600
++++ src/gnubiff-2.2.10/ui/Makefile.am	2008-04-23 15:25:45.062500000 -0500
+@@ -1,4 +1,16 @@
+ uidir      = $(pkgdatadir)
+-dist_ui_DATA := $(wildcard *.glade)
+-EXTRA_DIST := $(wildcard *.gladep)
++dist_ui_DATA = \
++	applet-gtk.glade \
++	authentication.glade \
++	certificate.glade \
++	popup.glade \
++	preferences.glade \
++	properties.glade
+ 
++EXTRA_DIST = \
++	applet-gtk.gladep \
++	authentication.gladep \
++	certificate.gladep \
++	popup.gladep \
++	preferences.gladep \
++	properties.gladep

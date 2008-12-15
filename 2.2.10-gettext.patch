@@ -1,0 +1,12 @@
+--- origsrc/gnubiff-2.2.10/configure.ac	2008-02-22 06:40:13.000000000 -0600
++++ src/gnubiff-2.2.10/configure.ac	2008-04-23 18:10:45.984375000 -0500
+@@ -173,8 +173,7 @@
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE",
+ 	               [The prefix for our gettext translation domains.])
+ AC_PROG_INTLTOOL
+-#AM_GLIB_GNU_GETTEXT
+-AM_GNU_GETTEXT([external])
++AM_GLIB_GNU_GETTEXT
+ 
+ 
+ 
