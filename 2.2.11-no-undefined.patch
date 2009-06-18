@@ -1,0 +1,13 @@
+In GNOME 2.26+, libpanelapplet no longer requires libgnomeui.
+
+--- origsrc/gnubiff-2.2.11/configure.ac	2009-06-17 23:37:49.277822500 -0500
++++ src/gnubiff-2.2.11/configure.ac	2009-06-17 23:45:20.830722100 -0500
+@@ -181,7 +181,7 @@ AM_GLIB_GNU_GETTEXT
+ #                           GNOME support                            #
+ ######################################################################
+ if test "$OPT_USEGNOME" = "yes"; then
+-  PKG_CHECK_MODULES(GNOME_PANEL_DEP,libpanelapplet-2.0, [
++  PKG_CHECK_MODULES(GNOME_PANEL_DEP,libgnomeui-2.0 libpanelapplet-2.0, [
+ 	AC_SUBST(GNOME_PANEL_DEP_CFLAGS)
+ 	AC_SUBST(GNOME_PANEL_DEP_LIBS)
+ 	AH_TEMPLATE([USE_GNOME])
