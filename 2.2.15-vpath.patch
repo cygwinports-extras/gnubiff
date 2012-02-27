@@ -1,0 +1,11 @@
+--- origsrc/gnubiff-2.2.15/ui/Makefile.am
++++ src/gnubiff-2.2.15/ui/Makefile.am
+@@ -4,7 +4,7 @@ desktop_DATA     = $(desktop_in_files:.d
+ @INTLTOOL_DESKTOP_RULE@
+ 
+ uidir            = $(pkgdatadir)
+-dist_ui_DATA     = $(wildcard *.ui)
++dist_ui_DATA     = $(wildcard $(srcdir)/*.ui)
+ 
+ EXTRA_DIST       = gnubiff.desktop.in
+ 
