@@ -1,5 +1,0 @@
-category: Gnome Mail
-requires: libfam0 libgcc1 libgdk_pixbuf2.0 libglib2.0_0 libgtk3_0 libintl8 libopenssl100 libpanel-applet4_0 libpango1.0_0 libpopt0 libstdc++6 libX11_6
-sdesc: "GNOME mail notification program"
-ldesc: "gnubiff is a mail notification program for GNOME that checks for
-mail and displays headers when new mail has arrived."

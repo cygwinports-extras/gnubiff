@@ -1,0 +1,18 @@
+inherit gnome2
+
+NAME="gnubiff"
+VERSION=2.2.15
+RELEASE=2
+CATEGORY="Mail"
+SUMMARY="GNOME mail notification program"
+DESCRIPTION="gnubiff is a mail notification program for GNOME that checks for
+mail and displays headers when new mail has arrived."
+HOMEPAGE="http://gnubiff.sourceforge.net/"
+SRC_URI="mirror://sourceforge/gnubiff/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="
+	2.2.10-gettext.patch
+	2.2.15-vpath.patch
+	2.2.15-glib231.patch
+"
+
+DIFF_EXCLUDES='*.tex mdate-sh m4 po'

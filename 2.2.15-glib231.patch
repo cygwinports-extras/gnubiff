@@ -1,0 +1,12 @@
+--- origsrc/gnubiff-2.2.15/src/gnubiff.cc	2012-01-08 14:55:47.000000000 -0600
++++ src/gnubiff-2.2.15/src/gnubiff.cc	2013-10-25 15:20:04.110608100 -0500
+@@ -60,7 +60,9 @@ int main (int argc, char **argv) {
+ #endif
+ 
+ 	// Thread initialization
++#if !GLIB_CHECK_VERSION(2,31,0)
+ 	g_thread_init (NULL);
++#endif
+ 	gdk_threads_init ();
+ 
+ 	//
