@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="gnubiff"
 VERSION=2.2.15
-RELEASE=2
+RELEASE=3
 CATEGORY="Mail"
 SUMMARY="GNOME mail notification program"
 DESCRIPTION="gnubiff is a mail notification program for GNOME that checks for
@@ -16,3 +16,6 @@ PATCH_URI="
 "
 
 DIFF_EXCLUDES='*.tex mdate-sh m4 po'
+
+# gnome: panel applet
+CYGCONF_ARGS="--disable-gnome"
